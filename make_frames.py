@@ -26,7 +26,8 @@ def extract_frames(video_path, output_folder, start_frame=1, limit=150):  # Scra
     video_capture.release()
     print(f"Extracted {frame_count} frames to {output_folder}")
 
-# Example usage
-video_file = r"C:\Users\tyler\Desktop\frame-gen\big_buck_bunny.mp4"
-frames_folder = os.path.dirname(__file__) + "/images/"
-extract_frames(video_file, frames_folder, start_frame=20, limit=500)
+if __name__ == "__main__":
+    # Example usage
+    video_file = r"C:\Users\name\Desktop\frame-gen\big_buck_bunny.mp4"
+    frames_folder = os.path.dirname(__file__) + "/images/"
+    extract_frames(video_file, frames_folder, start_frame=20, limit=500)
